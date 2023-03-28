@@ -21,6 +21,8 @@
 ### Image Classification
 - `2015` [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) (ResNet)
     - Initial ResNet paper. Introduced the idea of residual blocks, where the input is added (element wise) to the output, so the weights learn the difference (i.e. the residual) between in the input and the output. This innovation allows neural nets to be more efficient and with more layers, and was used in this paper to get what was SOTA image classification results at the time.
+- `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
+    - A modern take on CNNs architectures.
 
 ### Segmentation
 - `2015` [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
