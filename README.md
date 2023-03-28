@@ -1,14 +1,19 @@
 
 ## Table of Contents
-1. [Computer Vision](#computer-vision)  
+1. [Tabular Models](#tabular-models)
+2. [Computer Vision](#computer-vision)  
     1. [Image Classification](#image-classification)
     2. [Segmentation](#segmentation)
-2. [Language Models](#language-models)
+3. [Language Models](#language-models)
     1. [Attention](#attention)
-3. [Auto Encoders](#auto-encoders)
-4. [GANs](#gans)
-5. [Normalization](#normalization)
+4. [Auto Encoders](#auto-encoders)
+5. [GANs](#gans)
+6. [Normalization](#normalization)
 
+
+## Tabular Models
+- `2021` [Tabular Data: Deep Learning Is Not All You Need](#https://arxiv.org/abs/2106.03253)
+    - Over the past few years, several deep learning models have claimed to outperform XGBoost on tabular data. This paper comprehensively reviews these models on a bunch of datasets and concludes that XGBoost is still the best single-model approach for tabular data, however an ensemble of XGBoost and deep learning models performs even better. 
 
 ## Computer Vision
 
