@@ -5,7 +5,8 @@
     2. [Segmentation](#segmentation)
 2. [Language Models](#language-models)
     1. [Attention](#attention)
-3. [Normalization](#normalization)
+3. [GANs](#gans)
+4. [Normalization](#normalization)
 
 
 ## Computer Vision
@@ -24,6 +25,10 @@
 ### Attention
 - `2017` [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 	- This paper introduced the Transformer, which was the next major milestone in sequence-to-sequence modeling tasks after RNNs and LSTMs, and is a key building block for many of the large language models we have today. The Transformer uses a fully self-attention-based approach, eliminating the need for recurrent or convolutional layers, and making it more parallelizable and efficient to train. The paper introduces a multi-head attention mechanism that enables the model to focus on multiple parts of the input simultaneously, providing richer information exchange between encoder and decoder.
+
+## GANs
+- `2014` [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)
+    - The initial GANs paper. The idea is that you train a Generator model which takes random noise as input and outputs synthetic data, and a Discriminator model which classifies data as either real or synthetic. These two models are iteratively trained and both get gradually better.
 
 ## Normalization
 - `2015` [Batch Normalization](https://arxiv.org/abs/1502.03167)
