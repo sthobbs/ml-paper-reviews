@@ -6,6 +6,7 @@
     2. [Segmentation](#segmentation)
 3. [Language Models](#language-models)
     1. [Attention](#attention)
+    2. [LLMs](#llms)
 4. [Auto Encoders](#auto-encoders)
 5. [GANs](#gans)
 6. [Normalization](#normalization)
@@ -32,6 +33,12 @@
 - `2017` [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 	- This paper introduced the Transformer, which was the next major milestone in sequence-to-sequence modeling tasks after RNNs and LSTMs, and is a key building block for many of the large language models we have today. The Transformer uses a fully self-attention-based approach, eliminating the need for recurrent or convolutional layers, and making it more parallelizable and efficient to train. The paper introduces a multi-head attention mechanism that enables the model to focus on multiple parts of the input simultaneously, providing richer information exchange between encoder and decoder.
 
+### LLMs
+- `2022` [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
+    - *Emergence* is a physics term that describes how quantitative changes can lead to qualitatively different results (e.g. gradually lowering the temperature of water will at some point cause the water to turn to ice). Large language models with 100s of billions of parameters have recently shown amazing abilities (e.g. logical reasoning, arithmetic). Interestingly, as you increase the size of the model, many of these abilities are suddenly acquired rather than gradually improved. Smaller models can't do these tasks at all, they're no better than random, but once the model is large enough, they can do them. This paper studies how a quantitative change in model size leads to a qualitative change in abilities.
+
+
+
 ## Auto Encoders
 - `2020` [Auto Encoders](https://arxiv.org/abs/2003.05991)
     - This paper gives an overview of auto encoders and lists many interesting applications for them.
@@ -42,6 +49,6 @@
 
 ## Normalization
 - `2015` [Batch Normalization](https://arxiv.org/abs/1502.03167)
-	- Batch Normalization (Batch Norm) is a widely adopted technique in deep learning still frequently used today. At each Batch Norm layer, data within each mini-batch is normalized, this leads to faster training and less care required when initializing weights.
+	- Batch Normalization (Batch Norm) is a widely adopted technique in deep learning still frequently used today. At each Batch Norm layer, data within each mini-batch is normalized, this leads to faster training and less care required when initializing weights. It also acts as a regularizer.
 
 
