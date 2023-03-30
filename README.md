@@ -3,8 +3,9 @@
 1. [Tabular Models](#tabular-models)
 2. [Computer Vision](#computer-vision)  
     1. [Image Classification](#image-classification)
-    2. [Video Classification](#video-classification)
-    3. [Segmentation](#segmentation)
+    2. [Object Detection](#object-detection)
+    3. [Video Classification](#video-classification)
+    4. [Segmentation](#segmentation)
 3. [Language Models](#language-models)
     1. [Attention](#attention)
     2. [LLMs](#llms)
@@ -27,6 +28,9 @@
 - `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
     - A modern take on CNNs architectures.
 
+### Object Detection
+- `2016` [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640#)
+    - The authors propose a real-time object detection system based on a single neural network architecture, which only passes over the image once, making it much faster than traditional object detection systems.
 ### Video Classification
 - `2014` [Large-scale Video Classification with Convolutional Neural Networks](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf)
     - One of the first attempts at applying deep CNNs to video classification.
