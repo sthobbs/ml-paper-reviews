@@ -3,7 +3,8 @@
 1. [Tabular Models](#tabular-models)
 2. [Computer Vision](#computer-vision)  
     1. [Image Classification](#image-classification)
-    2. [Segmentation](#segmentation)
+    2. [Video Classification](#video-classification)
+    3. [Segmentation](#segmentation)
 3. [Language Models](#language-models)
     1. [Attention](#attention)
     2. [LLMs](#llms)
@@ -23,10 +24,12 @@
     - Initial ResNet paper. Introduced the idea of residual blocks, where the input is added (element wise) to the output, so the weights learn the difference (i.e. the residual) between in the input and the output. This innovation allows neural nets to be more efficient and with more layers, and was used in this paper to get what was SOTA image classification results at the time.
 - `2020` [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
     - Larger CNNs outperform smaller CNNs, but there are many ways to make a CNN bigger. You can scale the number of layers, number of channels and/or image resolution. The authors purpose a novel scaling coefficient that balances these three methods in a systematic way to achieve the best possible trade-off between model size and accuracy.
-
-
 - `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
     - A modern take on CNNs architectures.
+
+### Video Classification
+- `2014` [Large-scale Video Classification with Convolutional Neural Networks](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf)
+    - One of the first attempts at applying deep CNNs to video classification.
 
 ### Segmentation
 - `2015` [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
