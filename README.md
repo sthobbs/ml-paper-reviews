@@ -12,7 +12,8 @@
 4. [Reinforcement Learning](#reinforcement-learning)
 5. [Auto Encoders](#auto-encoders)
 6. [GANs](#gans)
-7. [Normalization](#normalization)
+7. [General Deep Learning](#general-deep-learning)
+8. [Normalization](#normalization)
 
 
 ## Tabular Models
@@ -65,6 +66,11 @@
 ## GANs
 - `2014` [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)
     - The initial GANs paper. The idea is that you train a Generator model which takes random noise as input and outputs synthetic data, and a Discriminator model which classifies data as either real or synthetic. These two models are iteratively trained and both get gradually better.
+
+
+## General Deep Learning
+- `2015` [Deep Learning](https://www.researchgate.net/publication/277411157_Deep_Learning)
+    - High-level overview of early deep learning up to LSTM.
 
 
 ## Normalization
