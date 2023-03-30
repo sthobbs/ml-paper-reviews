@@ -9,9 +9,10 @@
 3. [Language Models](#language-models)
     1. [Attention](#attention)
     2. [LLMs](#llms)
-4. [Auto Encoders](#auto-encoders)
-5. [GANs](#gans)
-6. [Normalization](#normalization)
+4. [Reinforcement Learning](#reinforcement-learning)
+5. [Auto Encoders](#auto-encoders)
+6. [GANs](#gans)
+7. [Normalization](#normalization)
 
 
 ## Tabular Models
@@ -51,14 +52,20 @@
     - *Emergence* is a physics term that describes how quantitative changes can lead to qualitatively different results (e.g. gradually lowering the temperature of water will at some point cause the water to turn to ice). Large language models with 100s of billions of parameters have recently shown amazing abilities (e.g. logical reasoning, arithmetic). Interestingly, as you increase the size of the model, many of these abilities are suddenly acquired rather than gradually improved. Smaller models can't do these tasks at all, they're no better than random, but once the model is large enough, they can do them. This paper studies how a quantitative change in model size leads to a qualitative change in abilities.
 
 
+## Reinforcement Learning
+- `2022` [Mastering the Game of Stratego with Model-Free Multi-agent Reinforcement Learning](https://arxiv.org/abs/2206.15378)
+    - Stratego is a board game that involves long term global strategy and bluffing, and is much more difficult for computers than Chess, Go or even Poker, which made it one of the last games holding out against AI.
+
 
 ## Auto Encoders
 - `2020` [Auto Encoders](https://arxiv.org/abs/2003.05991)
     - This paper gives an overview of auto encoders and lists many interesting applications for them.
 
+
 ## GANs
 - `2014` [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)
     - The initial GANs paper. The idea is that you train a Generator model which takes random noise as input and outputs synthetic data, and a Discriminator model which classifies data as either real or synthetic. These two models are iteratively trained and both get gradually better.
+
 
 ## Normalization
 - `2015` [Batch Normalization](https://arxiv.org/abs/1502.03167)
