@@ -20,6 +20,11 @@
 ## Tabular Models
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](#https://arxiv.org/abs/2106.03253)
     - Over the past few years, several deep learning models have claimed to outperform XGBoost on tabular data. This paper comprehensively reviews these models on a bunch of datasets and concludes that XGBoost is still the best single-model approach for tabular data, however an ensemble of XGBoost and deep learning models performs even better. 
+- `2022` [Why do tree-based models still outperform deep learning on tabular data](https://arxiv.org/abs/2207.08815)
+    - This paper reinforces the claim that tree-based models outperform deep learning models on tabular data and tries to explain why that is. The paper suggests 3 reasons:
+        1. Deep learning models provide smooth solutions, tree-based models don't, and often the true underlying relationship of tabular data is not smooth.
+        2. Tabular data tends to have more useless features (i.e. features that aren't predictive at all), and tabular models are better at handling these.
+        3. Many deep learning models have a rotation invariance property where if you multiply the training/test data by a rotation matrix it will train just as well. Trying this with tree-based models gives the best results when using the original orientation, which suggests that rotation invariance is an undesirable property.
 
 ## Computer Vision
 
