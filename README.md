@@ -6,6 +6,7 @@
     2. [Object Detection](#object-detection)
     3. [Video Classification](#video-classification)
     4. [Segmentation](#segmentation)
+    5. [Text-to-Image](#text-to-image)
 3. [Language Models](#language-models)
     1. [Attention](#attention)
     2. [LLMs](#llms)
@@ -41,6 +42,9 @@
 - `2015` [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
     - Interesting CNN architecture for image segmentation which involves a contracting path to capture context and a symmetric expanding path that enables precise localization.  Skip connections are introduced to connect the contracting and expanding paths, which allow the network to access both low- and high-level features and preserve spatial information.
 
+### Text-to-Image
+- `2022` [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487)
+    - SOTA text-to-image generation, outperforming DALL-E 2.
 
 ## Language Models
 
