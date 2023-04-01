@@ -18,13 +18,13 @@
 
 
 ## Tabular Models
-- `2021` [Tabular Data: Deep Learning Is Not All You Need](#https://arxiv.org/abs/2106.03253)
+- `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
     - Over the past few years, several deep learning models have claimed to outperform XGBoost on tabular data. This paper comprehensively reviews these models on a bunch of datasets and concludes that XGBoost is still the best single-model approach for tabular data, however an ensemble of XGBoost and deep learning models performs even better. 
 - `2022` [Why do tree-based models still outperform deep learning on tabular data](https://arxiv.org/abs/2207.08815)
     - This paper reinforces the claim that tree-based models outperform deep learning models on tabular data and tries to explain why that is. The paper suggests 3 reasons:
-        1. Deep learning models provide smooth solutions, tree-based models don't, and often the true underlying relationship of tabular data is not smooth.
-        2. Tabular data tends to have more useless features (i.e. features that aren't predictive at all), and tabular models are better at handling these.
-        3. Many deep learning models have a rotation invariance property where if you multiply the training/test data by a rotation matrix it will train just as well. Trying this with tree-based models gives the best results when using the original orientation, which suggests that rotation invariance is an undesirable property.
+        - Deep learning models provide smooth solutions, tree-based models don't, and often the true underlying relationship of tabular data is not smooth.
+        - Tabular data tends to have more useless features (i.e. features that aren't predictive at all), and tabular models are better at handling these.
+        - Many deep learning models have a rotation invariance property where if you multiply the training/test data by a rotation matrix it will train just as well. Trying this with tree-based models gives the best results when using the original orientation, which suggests that rotation invariance is an undesirable property.
 
 ## Computer Vision
 
@@ -63,6 +63,9 @@
 - `2022` [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
     - *Emergence* is a physics term that describes how quantitative changes can lead to qualitatively different results (e.g. gradually lowering the temperature of water will at some point cause the water to turn to ice). Large language models with 100s of billions of parameters have recently shown amazing abilities (e.g. logical reasoning, arithmetic). Interestingly, as you increase the size of the model, many of these abilities are suddenly acquired rather than gradually improved. Smaller models can't do these tasks at all, they're no better than random, but once the model is large enough, they can do them. This paper studies how a quantitative change in model size leads to a qualitative change in abilities.
 
+### Other
+- `2018` [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) (ULMFiT)
+    - From the fastai creator Jeremy Howard, this paper describes several techniques for improved transfer learning in NLP, including (1) gradually unfreezing the layers, (2) having exponentially smaller learning rates for earlier layers, and (3) having the learning rate schedule set so that the learning rate quickly increase linearly, then slowly decrease linearly (giving a slanted triangular shape) as training progresses. This paper also describes a 2-stage pretraining process. This technique was developed by Jeremy when putting together his fastai course and it was SOTA at the time.
 
 ## Reinforcement Learning
 - `2022` [Mastering the Game of Stratego with Model-Free Multi-agent Reinforcement Learning](https://arxiv.org/abs/2206.15378)
