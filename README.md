@@ -34,7 +34,7 @@
 - `2016` [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
     - Adds residual connections to the Inception architecture.
 - `2020` [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
-    - Larger CNNs outperform smaller CNNs, but there are many ways to make a CNN bigger. You can scale the number of layers, number of channels and/or image resolution. The authors purpose a novel scaling coefficient that balances these three methods in a systematic way to achieve the best possible trade-off between model size and accuracy.
+    - Larger CNNs outperform smaller CNNs, but there are many ways to make a CNN bigger. You can scale the number of layers, number of channels and/or image resolution. The authors propose a novel scaling coefficient that balances these three methods in a systematic way to achieve the best possible trade-off between model size and accuracy.
 - `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
     - A modern take on CNNs architectures.
 
@@ -58,6 +58,9 @@
 ### Attention
 - `2017` [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 	- This paper introduced the Transformer, which was the next major milestone in sequence-to-sequence modeling tasks after RNNs and LSTMs, and is a key building block for many of the large language models we have today. The Transformer uses a fully self-attention-based approach, eliminating the need for recurrent or convolutional layers, and making it more parallelizable and efficient to train. The paper introduces a multi-head attention mechanism that enables the model to focus on multiple parts of the input simultaneously, providing richer information exchange between encoder and decoder.
+- `2019` [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+	- Another big step forward in language models. BERT learns full-context word representations by using a bidirectional transformer architecture. The model learns in 2 stages: (1) pre-training on unlabeled text data, and (2) fine-tuning on a specific task.
+
 
 ### LLMs
 - `2022` [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
