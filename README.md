@@ -74,6 +74,8 @@
     - From the fastai creator Jeremy Howard, this paper describes several techniques for improved transfer learning in NLP, including (1) gradually unfreezing the layers, (2) having exponentially smaller learning rates for earlier layers, and (3) having the learning rate schedule set so that the learning rate quickly increase linearly, then slowly decrease linearly (giving a slanted triangular shape) as training progresses. This paper also describes a 2-stage pretraining process. This technique was developed by Jeremy when putting together his fastai course and it was SOTA at the time.
 
 ## Reinforcement Learning
+- `2015` [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+    - Agent plays Atari at a superhuman level.
 - `2022` [Mastering the Game of Stratego with Model-Free Multi-agent Reinforcement Learning](https://arxiv.org/abs/2206.15378)
     - Stratego is a board game that involves long term global strategy and bluffing, and is much more difficult for computers than Chess, Go or even Poker, which made it one of the last games holding out against AI.
 
