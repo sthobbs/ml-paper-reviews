@@ -6,7 +6,8 @@
     2. [Object Detection](#object-detection)
     3. [Video Classification](#video-classification)
     4. [Segmentation](#segmentation)
-    5. [Text-to-Image](#text-to-image)
+    5. [Super-Resolution](#super-resolution)
+    6. [Text-to-Image](#text-to-image)
 3. [Language Models](#language-models)
     1. [Attention](#attention)
     2. [LLMs](#llms)
@@ -26,6 +27,7 @@
         - Tabular data tends to have more useless features (i.e. features that aren't predictive at all), and tabular models are better at handling these.
         - Many deep learning models have a rotation invariance property where if you multiply the training/test data by a rotation matrix it will train just as well. Trying this with tree-based models gives the best results when using the original orientation, which suggests that rotation invariance is an undesirable property.
 
+
 ## Computer Vision
 
 ### Image Classification
@@ -41,16 +43,20 @@
 ### Object Detection
 - `2016` [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640#)
     - The authors propose a real-time object detection system based on a single neural network architecture, which only passes over the image once, making it much faster than traditional object detection systems.
+
 ### Video Classification
 - `2014` [Large-scale Video Classification with Convolutional Neural Networks](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf)
     - One of the first attempts at applying deep CNNs to video classification.
 - `2015` [Beyond Short Snippets: Deep Networks for Video Classification](https://arxiv.org/abs/1503.08909)
     - The paper combines CNN layers and LSTM for video classification on longer clips.
 
-
 ### Segmentation
 - `2015` [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
     - Interesting CNN architecture for image segmentation which involves a contracting path to capture context and a symmetric expanding path that enables precise localization.  Skip connections are introduced to connect the contracting and expanding paths, which allow the network to access both low- and high-level features and preserve spatial information.
+
+### Super-Resolution
+- `2015` [Image Super-Resolution Using Deep Convolutional Networks](https://arxiv.org/abs/1501.00092)
+    - Image enhancement with a straightforward application of CNNs.
 
 ### Text-to-Image
 - `2022` [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487)
