@@ -44,6 +44,9 @@
 ### Video Classification
 - `2014` [Large-scale Video Classification with Convolutional Neural Networks](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf)
     - One of the first attempts at applying deep CNNs to video classification.
+- `2015` [Beyond Short Snippets: Deep Networks for Video Classification](https://arxiv.org/abs/1503.08909)
+    - The paper combines CNN layers and LSTM for video classification on longer clips.
+
 
 ### Segmentation
 - `2015` [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
