@@ -16,7 +16,7 @@
 6. [GANs](#gans)
 7. [General Deep Learning](#general-deep-learning)
 8. [Normalization](#normalization)
-
+9. [Stochastic Regularization](#stochastic-regularization)
 
 ## Tabular Models
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
@@ -105,4 +105,8 @@
 - `2015` [Batch Normalization](https://arxiv.org/abs/1502.03167)
 	- Batch Normalization (Batch Norm) is a widely adopted technique in deep learning still frequently used today. At each Batch Norm layer, data within each mini-batch is normalized, this leads to faster training and less care required when initializing weights. It also acts as a regularizer.
 
+
+## Stochastic Regularization
+- `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
+    - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
 
