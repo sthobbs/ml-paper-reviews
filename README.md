@@ -73,6 +73,8 @@
 
 
 ### LLMs
+- `2022` [OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/abs/2205.01068)
+    - The author's create an open source replica of GPT3 and discuss ML ethics.
 - `2022` [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
     - *Emergence* is a physics term that describes how quantitative changes can lead to qualitatively different results (e.g. gradually lowering the temperature of water will at some point cause the water to turn to ice). Large language models with 100s of billions of parameters have recently shown amazing abilities (e.g. logical reasoning, arithmetic). Interestingly, as you increase the size of the model, many of these abilities are suddenly acquired rather than gradually improved. Smaller models can't do these tasks at all, they're no better than random, but once the model is large enough, they can do them. This paper studies how a quantitative change in model size leads to a qualitative change in abilities.
 
