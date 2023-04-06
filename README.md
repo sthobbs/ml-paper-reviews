@@ -18,6 +18,8 @@
 8. [Normalization](#normalization)
 9. [Stochastic Regularization](#stochastic-regularization)
 10. [Optimization](#optimization)
+    1. [Gradient-Based Optimization](#gradient-based-optimization)
+    2. [Bayesian Optimization](#bayesian-optimization)
 
 ## Tabular Models
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
@@ -112,14 +114,22 @@
 - `2016` [Layer Normalization](https://arxiv.org/abs/1607.06450)
     - Layer normalization (LN) is an alternative to batch normalization (BN), where you normalize activations across the layer, rather than across the mini-batch. Like BN, LN prevents exploding/vanishing gradients, and enables much faster training of deep neural nets without the need to carefully initialize the weights. LN has become very popular in the past few years and has surpassed BN in popularity in recent ML papers by a significant margin. One advantage to LN over BN is that data samples within a mini-batch are independent and therefore parallelizable. This allows you to fine tune large models without an expensive high-memory GPU by splitting the mini-batch into multiple "sub-mini-batches" to compute the mini-batch gradient piece-by-piece. LN is also more easily applied to RNNs than BN when different data points have different input sizes.
 
+
 ## Stochastic Regularization
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
     - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
 
 
 ## Optimization
+
+### Gradient-Based Optimization
 - `2014` [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980)
     - Adam (named from Adaptive Moment Estimation) is a popular gradient-based deep learning optimizer. It's the default optimizer for scikit-learn's MLPClassifier class. Adam has a reputation of being less sensitive to hyperparameter changes than SGD with momentum.
 - `2017` [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101) (AdamW)
     - This paper discusses AdamW, an enhancement to the Adam optimizer, which has been showing up in a lot of recent ML papers. The terms "weight decay" and "L2 penalty" are often used interchangeably, and while this is correct for basic SGD, it's not correct for adaptive learning rate optimization algorithms like Adam (which uses an L2 penalty in most implementations). AdamW modifies Adam to use weight decay. This is advantageous because (1) it improves performance, and (2) the hyperparameters for learning rate and L2 penalty are highly dependent on each other, whereas the hyperparameters for learning rate and weight decay are mostly decoupled, which leads to hyperparameters being tuned more easily.
+
+### Bayesian Optimization
+- `2022` [A Comparative study of Hyper-Parameter Optimization Tools](https://arxiv.org/abs/2201.06433)
+    - Bayesian hyperparameter tuning algorithms are an underutilized tool to improve ML models. This paper compares various packages that implement these algorithms and seems to favour Optuna.
+
 
