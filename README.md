@@ -17,6 +17,7 @@
 7. [General Deep Learning](#general-deep-learning)
 8. [Normalization](#normalization)
 9. [Stochastic Regularization](#stochastic-regularization)
+10. [Optimization](#optimization)
 
 ## Tabular Models
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
@@ -109,4 +110,10 @@
 ## Stochastic Regularization
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
     - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
+
+
+## Optimization
+- `2014` [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980)
+    - Adam (named from Adaptive Moment Estimation) is a popular gradient-based deep learning optimizer. It's the default optimizer for scikit-learn's MLPClassifier class. Adam has a reputation of being less sensitive to hyperparameter changes than SGD with momentum.
+
 
