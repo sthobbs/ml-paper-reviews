@@ -42,6 +42,8 @@
     - A modern take on CNNs architectures.
 
 ### Object Detection
+- `2015` [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)
+    - This object detection model has two parts, (1) a network that generates candidate bounding boxes around potential objects in the image, and (2) a network that classifies the proposed regions. I prefer the You Only Look Once (YOLO) formulation for object detection since the whole end-to-end pipeline is trained jointly.
 - `2016` [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640#)
     - The authors propose a real-time object detection system based on a single neural network architecture, which only passes over the image once, making it much faster than traditional object detection systems.
 
