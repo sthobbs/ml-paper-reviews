@@ -80,7 +80,7 @@
 - `2022` [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
     - *Emergence* is a physics term that describes how quantitative changes can lead to qualitatively different results (e.g. gradually lowering the temperature of water will at some point cause the water to turn to ice). Large language models with 100s of billions of parameters have recently shown amazing abilities (e.g. logical reasoning, arithmetic). Interestingly, as you increase the size of the model, many of these abilities are suddenly acquired rather than gradually improved. Smaller models can't do these tasks at all, they're no better than random, but once the model is large enough, they can do them. This paper studies how a quantitative change in model size leads to a qualitative change in abilities.
 
-### Other
+### Other Language Models
 - `2018` [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) (ULMFiT)
     - From the fastai creator Jeremy Howard, this paper describes several techniques for improved transfer learning in NLP, including (1) gradually unfreezing the layers, (2) having exponentially smaller learning rates for earlier layers, and (3) having the learning rate schedule set so that the learning rate quickly increase linearly, then slowly decrease linearly (giving a slanted triangular shape) as training progresses. This paper also describes a 2-stage pretraining process. This technique was developed by Jeremy when putting together his fastai course and it was SOTA at the time.
 
@@ -109,7 +109,8 @@
 ## Normalization
 - `2015` [Batch Normalization](https://arxiv.org/abs/1502.03167)
 	- Batch Normalization (Batch Norm) is a widely adopted technique in deep learning still frequently used today. At each Batch Norm layer, data within each mini-batch is normalized, this leads to faster training and less care required when initializing weights. It also acts as a regularizer.
-
+- `2016` [Layer Normalization](https://arxiv.org/abs/1607.06450)
+    - Layer normalization (LN) is an alternative to batch normalization (BN), where you normalize activations across the layer, rather than across the mini-batch. Like BN, LN prevents exploding/vanishing gradients, and enables much faster training of deep neural nets without the need to carefully initialize the weights. LN has become very popular in the past few years and has surpassed BN in popularity in recent ML papers by a significant margin. One advantage to LN over BN is that data samples within a mini-batch are independent and therefore parallelizable. This allows you to fine tune large models without an expensive high-memory GPU by splitting the mini-batch into multiple "sub-mini-batches" to compute the mini-batch gradient piece-by-piece. LN is also more easily applied to RNNs than BN when different data points have different input sizes.
 
 ## Stochastic Regularization
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
