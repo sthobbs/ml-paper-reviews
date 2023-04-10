@@ -132,6 +132,8 @@
     - This paper discusses AdamW, an enhancement to the Adam optimizer, which has been showing up in a lot of recent ML papers. The terms "weight decay" and "L2 penalty" are often used interchangeably, and while this is correct for basic SGD, it's not correct for adaptive learning rate optimization algorithms like Adam (which uses an L2 penalty in most implementations). AdamW modifies Adam to use weight decay. This is advantageous because (1) it improves performance, and (2) the hyperparameters for learning rate and L2 penalty are highly dependent on each other, whereas the hyperparameters for learning rate and weight decay are mostly decoupled, which leads to hyperparameters being tuned more easily.
 
 ### Bayesian Optimization
+- `2011` [Algorithms for Hyper-Parameter Optimization](https://papers.nips.cc/paper_files/paper/2011/hash/86e8f7ab32cfd12577bc2619bc635690-Abstract.html)
+    - This paper gives a good explanation of the two most popular Bayesian Hyperparameter tuning algorithms. (1) Gaussian Processes (GP), and (2) Tree-structured Parzen Estimators (TPE). TPE tends to outperform GP.
 - `2022` [A Comparative study of Hyper-Parameter Optimization Tools](https://arxiv.org/abs/2201.06433)
     - Bayesian hyperparameter tuning algorithms are an underutilized tool to improve ML models. This paper compares various packages that implement these algorithms and seems to favour Optuna.
 
