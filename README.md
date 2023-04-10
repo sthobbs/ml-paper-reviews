@@ -126,10 +126,12 @@
 ## Optimization
 
 ### Gradient-Based Optimization
-- `2014` [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980)
+- `2014` [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980) (Adam)
     - Adam (named from Adaptive Moment Estimation) is a popular gradient-based deep learning optimizer. It's the default optimizer for scikit-learn's MLPClassifier class. Adam has a reputation of being less sensitive to hyperparameter changes than SGD with momentum.
 - `2017` [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101) (AdamW)
     - This paper discusses AdamW, an enhancement to the Adam optimizer, which has been showing up in a lot of recent ML papers. The terms "weight decay" and "L2 penalty" are often used interchangeably, and while this is correct for basic SGD, it's not correct for adaptive learning rate optimization algorithms like Adam (which uses an L2 penalty in most implementations). AdamW modifies Adam to use weight decay. This is advantageous because (1) it improves performance, and (2) the hyperparameters for learning rate and L2 penalty are highly dependent on each other, whereas the hyperparameters for learning rate and weight decay are mostly decoupled, which leads to hyperparameters being tuned more easily.
+- `2019` [On the Variance of the Adaptive Learning Rate and Beyond](https://arxiv.org/abs/1908.03265) (RAdam)
+    - RAdam (Rectified Adam) is an optimization algorithm that improves upon Adam (and AdamW). One limitation of Adam/AdamW is that they can get stuck in poor local minima unless the learning rate starts off very small (e.g. with linear warm up schedule). This paper investigates why this is and concludes that it's caused by the variance of the adaptive moment diverging in the early iterations. The paper goes on to purpose a way to correct this variance with theoretical justification. With RAdam, a linear warmup is no longer required, which results in simpler hyperparameter tuning.
 
 ### Bayesian Optimization
 - `2011` [Algorithms for Hyper-Parameter Optimization](https://papers.nips.cc/paper_files/paper/2011/hash/86e8f7ab32cfd12577bc2619bc635690-Abstract.html)
