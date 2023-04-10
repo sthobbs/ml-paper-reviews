@@ -38,9 +38,11 @@
     - Initial ResNet paper. Introduced the idea of residual blocks, where the input is added (element wise) to the output, so the weights learn the difference (i.e. the residual) between in the input and the output. This innovation allows neural nets to be more efficient and with more layers, and was used in this paper to get what was SOTA image classification results at the time.
 - `2016` [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
     - Adds residual connections to the Inception architecture.
+- `2017` [Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431) (ResNeXt)
+    - This paper outlines the ResNeXt architecture for CNNs, which creates blocks of parallel branches. This approach allows you to scale CNNs more efficiently than increasing the depth or width.
 - `2020` [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
     - Larger CNNs outperform smaller CNNs, but there are many ways to make a CNN bigger. You can scale the number of layers, number of channels and/or image resolution. The authors propose a novel scaling coefficient that balances these three methods in a systematic way to achieve the best possible trade-off between model size and accuracy.
-- `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
+- `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545) (ConvNeXt)
     - A modern take on CNNs architectures.
 
 ### Object Detection
@@ -66,6 +68,7 @@
 ### Text-to-Image
 - `2022` [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487)
     - SOTA text-to-image generation, outperforming DALL-E 2.
+
 
 ## Language Models
 
