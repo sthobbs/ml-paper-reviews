@@ -134,6 +134,8 @@
 ### Bayesian Optimization
 - `2011` [Algorithms for Hyper-Parameter Optimization](https://papers.nips.cc/paper_files/paper/2011/hash/86e8f7ab32cfd12577bc2619bc635690-Abstract.html)
     - This paper gives a good explanation of the two most popular Bayesian Hyperparameter tuning algorithms. (1) Gaussian Processes (GP), and (2) Tree-structured Parzen Estimators (TPE). TPE tends to outperform GP.
+ - `2020` [A new automatic machine learning based hyperparameter](https://journals.sagepub.com/doi/pdf/10.1177/0020294020932347)
+    - This paper is not good. There are several typos and incorrect equations (missing brackets, etc.), some of the diagrams aren't quite right, and the equations for their main algorithm don't seem to do what they say it does. Tree Parzen Estimators (TPE) is a good Bayesian hyperparameter tuning algorithm. The HyperOpt package implements Adaptive Tree Parzen Estimators (ATPE), which is an enhancement to TPE. I was looking for a paper on ATPE and found this one, which references the Hyperopt package and calls their algorithm "Adaptive Tree Parzen Estimators (ATPE)", but it doesn't seem to be the *real* algorithm. The ATPE algorithm in the HyperOpt codebase doesn't seem to resemble what's in this paper at all. On the plus side, the paper does give a solid review of existing literature.
 - `2022` [A Comparative study of Hyper-Parameter Optimization Tools](https://arxiv.org/abs/2201.06433)
     - Bayesian hyperparameter tuning algorithms are an underutilized tool to improve ML models. This paper compares various packages that implement these algorithms and seems to favour Optuna.
 
