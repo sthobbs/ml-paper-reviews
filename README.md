@@ -20,6 +20,9 @@
 10. [Optimization](#optimization)
     1. [Gradient-Based Optimization](#gradient-based-optimization)
     2. [Bayesian Optimization](#bayesian-optimization)
+11. [Model Explainability](#model-explainability)
+
+
 
 ## Tabular Models
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
@@ -145,3 +148,6 @@
     - Bayesian hyperparameter tuning algorithms are an underutilized tool to improve ML models. This paper compares various packages that implement these algorithms and seems to favour Optuna.
 
 
+## Model Explainability
+- `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
+    - This paper introduces SHAP (SHapely Additive exPlanations) and how they can be used for feature importance. Shapely values come from cooperative game theory, where you have a coalition that creates a value and you want to fairly allocate credit to each member of the coalition (e.g. employees of a company generating a profit). In the ML context, we are trying to assign credit to features to determine how valuable they are to the model performance. The true shapely values are impractically computationally intense for modestly-sized datasets, so the paper provides methods to approximate them.
