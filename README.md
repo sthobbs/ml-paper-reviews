@@ -43,8 +43,10 @@
     - Adds residual connections to the Inception architecture.
 - `2017` [Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431) (ResNeXt)
     - This paper outlines the ResNeXt architecture for CNNs, which creates blocks of parallel branches. This approach allows you to scale CNNs more efficiently than increasing the depth or width.
-- `2020` [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
+- `2020` [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) (EfficientNet)
     - Larger CNNs outperform smaller CNNs, but there are many ways to make a CNN bigger. You can scale the number of layers, number of channels and/or image resolution. The authors propose a novel scaling coefficient that balances these three methods in a systematic way to achieve the best possible trade-off between model size and accuracy.
+- `2021` [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) (ViT)
+    - Transformers are the main tool for language models, whereas CNNs are the go-to approach for image models. This paper describes Vision Transformers (ViT), which involves the application of transformers to image classification by splitting each image into a sequence of patches and treating each patch like a word.
 - `2022` [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545) (ConvNeXt)
     - A modern take on CNNs architectures.
 
