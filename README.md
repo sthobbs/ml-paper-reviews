@@ -9,7 +9,7 @@
     5. [Super-Resolution](#super-resolution)
     6. [Text-to-Image](#text-to-image)
 3. [Language Models](#language-models)
-    1. [Attention](#attention)
+    1. [Transformer](#transformer)
     2. [LLMs](#llms)
 4. [Reinforcement Learning](#reinforcement-learning)
 5. [Auto Encoders](#auto-encoders)
@@ -77,7 +77,7 @@
 
 ## Language Models
 
-### Attention
+### Transformer
 - `2017` [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 	- This paper introduced the Transformer, which was the next major milestone in sequence-to-sequence modeling tasks after RNNs and LSTMs, and is a key building block for many of the large language models we have today. The Transformer uses a fully self-attention-based approach, eliminating the need for recurrent or convolutional layers, and making it more parallelizable and efficient to train. The paper introduces a multi-head attention mechanism that enables the model to focus on multiple parts of the input simultaneously, providing richer information exchange between encoder and decoder.
 - `2019` [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
@@ -87,7 +87,8 @@
         1. Instead of using a large embedding matrix to pass one-hot encoded words directly into the hidden layer, it first passes them into a low-dimensional representation, then passes that into the hidden layer. This reduces the number of parameters.
         2. Parameter sharing across layers to reduce the number of parameters.
         3. An improved loss function involving next-sentence prediction.
-
+- `2022` [Competition-Level Code Generation with AlphaCode](https://arxiv.org/abs/2203.07814)
+    - DeepMind's paper on creating an AI that can compete in programming competitions (at the level of an average competitor). The paper is interesting, but quite long. AlphaCode generates thousands of possible solutions, then filters them by actually running the code locally on the examples from the question, then it submits the most promising solutions.
 
 ### LLMs
 - `2022` [OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/abs/2205.01068)
