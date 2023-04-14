@@ -9,8 +9,9 @@
     5. [Super-Resolution](#super-resolution)
     6. [Text-to-Image](#text-to-image)
 3. [Language Models](#language-models)
-    1. [Transformer](#transformer)
-    2. [LLMs](#llms)
+    1. [RNN](#rnn)
+    2. [Transformer](#transformer)
+    3. [LLMs](#llms)
 4. [Reinforcement Learning](#reinforcement-learning)
 5. [Auto Encoders](#auto-encoders)
 6. [GANs](#gans)
@@ -77,17 +78,21 @@
 
 ## Language Models
 
+### RNN
+- `2018` [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) (ELMo)
+    - ELMo uses a bidirectional-LSTM of the surrounding words to generate word embeddings that consider the context of the sentence. This approach was SOTA on several language tasks for a brief period before transformer-based models like BERT surpassed them.
+
 ### Transformer
 - `2017` [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 	- This paper introduced the Transformer, which was the next major milestone in sequence-to-sequence modeling tasks after RNNs and LSTMs, and is a key building block for many of the large language models we have today. The Transformer uses a fully self-attention-based approach, eliminating the need for recurrent or convolutional layers, and making it more parallelizable and efficient to train. The paper introduces a multi-head attention mechanism that enables the model to focus on multiple parts of the input simultaneously, providing richer information exchange between encoder and decoder.
-- `2019` [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+- `2019` [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) (BERT)
 	- Another big step forward in language models. BERT learns full-context word representations by using a bidirectional transformer architecture. The model learns in 2 stages: (1) pre-training on unlabeled text data, and (2) fine-tuning on a specific task.
-- `2019` [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://arxiv.org/abs/1909.11942)
+- `2019` [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://arxiv.org/abs/1909.11942) (ALBERT)
     - An improved version of BERT with 3 enhancements:
         1. Instead of using a large embedding matrix to pass one-hot encoded words directly into the hidden layer, it first passes them into a low-dimensional representation, then passes that into the hidden layer. This reduces the number of parameters.
         2. Parameter sharing across layers to reduce the number of parameters.
         3. An improved loss function involving next-sentence prediction.
-- `2022` [Competition-Level Code Generation with AlphaCode](https://arxiv.org/abs/2203.07814)
+- `2022` [Competition-Level Code Generation with AlphaCode](https://arxiv.org/abs/2203.07814) (AlphaCode)
     - DeepMind's paper on creating an AI that can compete in programming competitions (at the level of an average competitor). The paper is interesting, but quite long. AlphaCode generates thousands of possible solutions, then filters them by actually running the code locally on the examples from the question, then it submits the most promising solutions.
 
 ### LLMs
