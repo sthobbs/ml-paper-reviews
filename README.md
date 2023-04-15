@@ -17,11 +17,12 @@
 6. [GANs](#gans)
 7. [General Deep Learning](#general-deep-learning)
 8. [Normalization](#normalization)
-9. [Stochastic Regularization](#stochastic-regularization)
-10. [Optimization](#optimization)
+9. [Activation Functions](#activation-functions)
+10. [Stochastic Regularization](#stochastic-regularization)
+11. [Optimization](#optimization)
     1. [Gradient-Based Optimization](#gradient-based-optimization)
     2. [Bayesian Optimization](#bayesian-optimization)
-11. [Model Explainability](#model-explainability)
+12. [Model Explainability](#model-explainability)
 
 
 
@@ -136,6 +137,10 @@
 - `2016` [Layer Normalization](https://arxiv.org/abs/1607.06450)
     - Layer normalization (LN) is an alternative to batch normalization (BN), where you normalize activations across the layer, rather than across the mini-batch. Like BN, LN prevents exploding/vanishing gradients, and enables much faster training of deep neural nets without the need to carefully initialize the weights. LN has become very popular in the past few years and has surpassed BN in popularity in recent ML papers by a significant margin. One advantage to LN over BN is that data samples within a mini-batch are independent and therefore parallelizable. This allows you to fine tune large models without an expensive high-memory GPU by splitting the mini-batch into multiple "sub-mini-batches" to compute the mini-batch gradient piece-by-piece. LN is also more easily applied to RNNs than BN when different data points have different input sizes.
 
+
+## Activation Functions
+- `2020` [Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415) (GELU)
+    - GELU is a modern activation function that I'm seeing in a lot of recent deep learning papers, and it seems to work better than a lot of the other common ones. GELU can be viewed as a smoothed version of ReLU. It's defined as f(x) = x * Phi(x), where Phi(x) is the cdf of an N(0,1) random variable. 
 
 ## Stochastic Regularization
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
