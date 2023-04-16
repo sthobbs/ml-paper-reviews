@@ -18,11 +18,12 @@
 7. [General Deep Learning](#general-deep-learning)
 8. [Normalization](#normalization)
 9. [Activation Functions](#activation-functions)
-10. [Stochastic Regularization](#stochastic-regularization)
-11. [Optimization](#optimization)
+10. [Other Architectural Tools](#other-architectural-tools)
+11. [Stochastic Regularization](#stochastic-regularization)
+12. [Optimization](#optimization)
     1. [Gradient-Based Optimization](#gradient-based-optimization)
     2. [Bayesian Optimization](#bayesian-optimization)
-12. [Model Explainability](#model-explainability)
+13. [Model Explainability](#model-explainability)
 
 
 
@@ -141,6 +142,12 @@
 ## Activation Functions
 - `2020` [Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415) (GELU)
     - GELU is a modern activation function that I'm seeing in a lot of recent deep learning papers, and it seems to work better than a lot of the other common ones. GELU can be viewed as a smoothed version of ReLU. It's defined as f(x) = x * Phi(x), where Phi(x) is the cdf of an N(0,1) random variable. 
+
+
+## Other Architectural Tools
+- `2020` [GLU Variants Improve Transformer](https://arxiv.org/abs/2002.05202) (GLUs)
+    - Gated Linear Units (GLUs) are neural network layers where you multiply the output of a regular layer (element-wise) by a linear transformation of the input (i.e. f(xW+b) * (xV+c) for some activation function f). This architectural design seems to improve the performance of transformer models.
+
 
 ## Stochastic Regularization
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
