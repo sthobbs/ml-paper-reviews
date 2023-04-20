@@ -142,6 +142,8 @@
 ## Activation Functions
 - `2020` [Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415) (GELU)
     - GELU is a modern activation function that I'm seeing in a lot of recent deep learning papers, and it seems to work better than a lot of the other common ones. GELU can be viewed as a smoothed version of ReLU. It's defined as f(x) = x * Phi(x), where Phi(x) is the cdf of an N(0,1) random variable. 
+- `2020` [Mish: A Self Regularized Non-Monotonic Activation Function](https://arxiv.org/abs/1908.08681)
+    - Mish is a modern activation function that seems to outperform the commonly used ones. It's shape is very similar to GELU and Swish. Mish is defined as f(x) = x * tanh(softplus(x)), where softplus(x) = ln(1+e^x). The author claims that this form acts as a regularizer by smoothing the gradient.
 
 
 ## Other Architectural Tools
