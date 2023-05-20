@@ -18,12 +18,13 @@
 7. [General Deep Learning](#general-deep-learning)
 8. [Normalization](#normalization)
 9. [Activation Functions](#activation-functions)
-10. [Other Architectural Tools](#other-architectural-tools)
-11. [Stochastic Regularization](#stochastic-regularization)
-12. [Optimization](#optimization)
+10. [Data Augmentation](#data-augmentation)
+11. [Other Architectural Tools](#other-architectural-tools)
+12. [Stochastic Regularization](#stochastic-regularization)
+13. [Optimization](#optimization)
     1. [Gradient-Based Optimization](#gradient-based-optimization)
     2. [Bayesian Optimization](#bayesian-optimization)
-13. [Model Explainability](#model-explainability)
+14. [Model Explainability](#model-explainability)
 
 
 
@@ -145,6 +146,10 @@
 - `2020` [Mish: A Self Regularized Non-Monotonic Activation Function](https://arxiv.org/abs/1908.08681)
     - Mish is a modern activation function that seems to outperform the commonly used ones. It's shape is very similar to GELU and Swish. Mish is defined as f(x) = x * tanh(softplus(x)), where softplus(x) = ln(1+e^x). The author claims that this form acts as a regularizer by smoothing the gradient.
 
+
+## Data Augmentation
+- `2017` [The Effectiveness of Data Augmentation in Image Classification using Deep Learning](https://arxiv.org/abs/1712.04621)
+    - The paper proposes an architecture to jointly train two prepended neural networks as a data augmentation strategy. (1) An augmentation network, which takes 2 images and outputs 1 image combining the two (similar to style transfer), and (2) a classification network which takes the output of the augmentation network as input. At test time, only the classification network is used.
 
 ## Other Architectural Tools
 - `2020` [GLU Variants Improve Transformer](https://arxiv.org/abs/2002.05202) (GLUs)
