@@ -152,6 +152,8 @@
     - The paper proposes an architecture to jointly train two prepended neural networks as a data augmentation strategy. (1) An augmentation network, which takes 2 images and outputs 1 image combining the two (similar to style transfer), and (2) a classification network which takes the output of the augmentation network as input. At test time, only the classification network is used.
 
 ## Other Architectural Tools
+- `2013` [Maxout Networks](https://arxiv.org/abs/1302.4389)
+    - In a maxout layer, instead of computing one linear combination and applying an activation function, we compute k linear combinations and take the maximum. This can be thought of as automatically learning the activation functions with piecewise-linear convex functions.
 - `2020` [GLU Variants Improve Transformer](https://arxiv.org/abs/2002.05202) (GLUs)
     - Gated Linear Units (GLUs) are neural network layers where you multiply the output of a regular layer (element-wise) by a linear transformation of the input (i.e. f(xW+b) * (xV+c) for some activation function f). This architectural design seems to improve the performance of transformer models.
 
