@@ -25,7 +25,7 @@
     1. [Gradient-Based Optimization](#gradient-based-optimization)
     2. [Bayesian Optimization](#bayesian-optimization)
 14. [Model Explainability](#model-explainability)
-
+15. [Miscellaneous](#miscellaneous)
 
 
 ## Tabular Models
@@ -188,3 +188,7 @@
 ## Model Explainability
 - `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
     - This paper introduces SHAP (SHapely Additive exPlanations) and how they can be used for feature importance. Shapely values come from cooperative game theory, where you have a coalition that creates a value and you want to fairly allocate credit to each member of the coalition (e.g. employees of a company generating a profit). In the ML context, we are trying to assign credit to features to determine how valuable they are to the model performance. The true shapely values are impractically computationally intense for modestly-sized datasets, so the paper provides methods to approximate them.
+
+## Miscellaneous
+- `2018` [Mixed Precision Training](https://arxiv.org/abs/1710.03740)
+    - On newer GPUs, we can use half-precision arithmetic that accumulates into single-precision output for faster training and lower memory usage, while maintaining similar accuracy.
