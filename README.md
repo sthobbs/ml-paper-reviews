@@ -144,6 +144,8 @@
 
 
 ## Activation Functions
+- `2013` [Rectifiers Nonlinearities Improve Neural Network Acoustic Models](https://ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
+    - The authors show that ReLU (Rectified Linear Unit) and LReLU (Leaky ReLU) activations outperform tanh activations on speech recognition tasks.
 - `2020` [Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415) (GELU)
     - GELU is a modern activation function that I'm seeing in a lot of recent deep learning papers, and it seems to work better than a lot of the other common ones. GELU can be viewed as a smoothed version of ReLU. It's defined as f(x) = x * Phi(x), where Phi(x) is the cdf of an N(0,1) random variable. 
 - `2020` [Mish: A Self Regularized Non-Monotonic Activation Function](https://arxiv.org/abs/1908.08681)
