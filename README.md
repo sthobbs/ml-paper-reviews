@@ -172,6 +172,8 @@
     - Stochastic depth is a regularization technique similar to dropout, but we're dropping layers instead of nodes. At test time, all layers are included, but they're scaled down by their probability of being included in a training iteration (like dropout). This helps with vanishing gradients and forward-flow, and allows very deep NNs to be trained (e.g. 1000+ layers), reduces training time, and improves test error.
 - `2017` [Shake-Shake Regularization](https://arxiv.org/abs/1705.07485)
     - For a multi-branch neural networks (e.g. ResNeXt), shake-shake regularization replaces the branch sum with a stochastic linear combination of the branches. We use different coefficients for each forward and backward pass. This helps decorrelate the branches and has a regularization effect.
+- `2018` [DropBlock: A regularization method for convolutional networks](https://arxiv.org/abs/1810.12890)
+    - Dropout doesn't work too well on CNNs because neighbouring pixels are so strongly correlated that you're not really dropping much information. This paper presents an enhancement to dropout for CNNs, DropBlock, where contiguous rectangular regions are randomly dropped.
 
 ## Optimization
 
