@@ -166,6 +166,8 @@
 ## Stochastic Regularization
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
     - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
+- `2015` [Adding Gradient Noise Improves Learning for Very Deep Networks](https://arxiv.org/abs/1511.06807)
+    - The authors improved NN performance (on both the training and test set) by adding a gradually decreasing amount of Gaussian noise to the gradients during training. This may work by helping the model escape local minima and traverse saddle points more quickly.
 - `2016` [Deep Networks with Stochastic Depth](https://arxiv.org/abs/1603.09382)
     - Stochastic depth is a regularization technique similar to dropout, but we're dropping layers instead of nodes. At test time, all layers are included, but they're scaled down by their probability of being included in a training iteration (like dropout). This helps with vanishing gradients and forward-flow, and allows very deep NNs to be trained (e.g. 1000+ layers), reduces training time, and improves test error.
 - `2017` [Shake-Shake Regularization](https://arxiv.org/abs/1705.07485)
