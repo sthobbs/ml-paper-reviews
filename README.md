@@ -172,6 +172,9 @@
 
 
 ## Stochastic Regularization
+- `2013` [Stochastic Pooling for Regularization of Deep Convolutional Neural Networks](https://arxiv.org/abs/1301.3557)
+    - Pooling is a common operation in CNNs where neighbouring activations are aggregated, usually with either max or average aggregation functions. This makes models less dependent on the precise location of objects and helps generate translation-invariant features. Both approaches have their downsides, average-pooling tends to dilute high activations and max-pooling can lead to overfitting. The paper introduces an improved approach called stochastic pooling, where activations are aggregated to one of the values, which is picked randomly with probabilities proportional to the activation values. At test time we use a weighted sum of activations (weighted by the proportional probabilities).
+    - 2x2 max-pooling was popular for a while, but recently ML practitioners have moved away from pooling in favour of stride-2 convolutions to shrink the image down to a small size (e.g. 7x7), followed by one average pooling (rather than a dense layer) (max pooling can be better if the objects your trying to identify only takes up a small part of the image. fastai takes max-pool and average-pool and concatenates them for the last layer).
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
     - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
 - `2015` [Adding Gradient Noise Improves Learning for Very Deep Networks](https://arxiv.org/abs/1511.06807)
