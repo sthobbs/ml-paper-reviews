@@ -148,6 +148,8 @@
     - The authors show that ReLU (Rectified Linear Unit) and LReLU (Leaky ReLU) activations outperform tanh activations on speech recognition tasks.
 - `2016` [Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)](https://arxiv.org/abs/1511.07289)
     - The paper proposes the ELU (Exponential Linear Unit) activation, f(x) = x if x>0, and f(x) = a (e^x - 1) if x <= 0, and shows that it outperforms classic activation functions like ReLU, LReLU, and SReLU (Shifted ReLU).
+- `2017` [Self-Normalizing Neural Networks](https://arxiv.org/abs/1706.02515)
+    - The authors argues that the Scaled Exponential Linear Unit (SELU) activation function, f(x) = hx if x>0, and f(x) = ha(e^x - 1) if x <= 0, helps keep activation distributions having 0-mean and 1-variance throughout the network, which helps address the vanishing/exploding gradient problem. The paper also introduces alpha-dropout, a slightly modified version of dropout that sets dropped values to the minimum possible value of -ha, which works better with this activation function.
 - `2020` [Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415) (GELU)
     - GELU is a modern activation function that I'm seeing in a lot of recent deep learning papers, and it seems to work better than a lot of the other common ones. GELU can be viewed as a smoothed version of ReLU. It's defined as f(x) = x * Phi(x), where Phi(x) is the cdf of an N(0,1) random variable. 
 - `2020` [Mish: A Self Regularized Non-Monotonic Activation Function](https://arxiv.org/abs/1908.08681)
