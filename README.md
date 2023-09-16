@@ -46,6 +46,8 @@
     - Initial ResNet paper. Introduced the idea of residual blocks, where the input is added (element wise) to the output, so the weights learn the difference (i.e. the residual) between in the input and the output. This innovation allows neural nets to be more efficient and with more layers, and was used in this paper to get what was SOTA image classification results at the time.
 - `2016` [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
     - Adds residual connections to the Inception architecture.
+- `2017` [FractalNet: Ultra-Deep Neural Networks Without Residuals](https://arxiv.org/abs/1605.07648)
+    - This paper introduces a recursively defined fractal-like architecture called FractalNet, and a technique for regularizing it called drop-path, where random paths in the fractal are dropped for each batch. The architecture has solid performance, but falls quite a bit short of SOTA, so it's probably not worth the additional complexity.
 - `2017` [Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431) (ResNeXt)
     - This paper outlines the ResNeXt architecture for CNNs, which creates blocks of parallel branches. This approach allows you to scale CNNs more efficiently than increasing the depth or width.
 - `2018` [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
