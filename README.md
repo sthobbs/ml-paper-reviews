@@ -179,6 +179,8 @@
     - 2x2 max-pooling was popular for a while, but recently ML practitioners have moved away from pooling in favour of stride-2 convolutions to shrink the image down to a small size (e.g. 7x7), followed by one average pooling (rather than a dense layer) (max pooling can be better if the objects your trying to identify only takes up a small part of the image. fastai takes max-pool and average-pool and concatenates them for the last layer).
 - `2014` [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
     - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
+- `2014` [Learning with Pseudo-Ensembles](https://arxiv.org/abs/1412.4864)
+    - Motivated by the intuition that models trained to be robust to noise should generalize better, this paper describes a conceptual framework where a single model is used to generate multiple sets of predictions by introducing noise or perturbations into the model during training. The method covers Dropout and many other stochastic regularization techniques.
 - `2015` [Adding Gradient Noise Improves Learning for Very Deep Networks](https://arxiv.org/abs/1511.06807)
     - The authors improved NN performance (on both the training and test set) by adding a gradually decreasing amount of Gaussian noise to the gradients during training. This may work by helping the model escape local minima and traverse saddle points more quickly.
 - `2016` [Deep Networks with Stochastic Depth](https://arxiv.org/abs/1603.09382)
