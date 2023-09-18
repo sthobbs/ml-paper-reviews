@@ -181,6 +181,8 @@
     - Dropout is a fundamental deep learning regularization technique that is widely used today. This paper was first introduced as a Master's thesis and was rejected at NIPS, yet it ended up being one of the most important papers in deep learning with over 40k citations.
 - `2014` [Learning with Pseudo-Ensembles](https://arxiv.org/abs/1412.4864)
     - Motivated by the intuition that models trained to be robust to noise should generalize better, this paper describes a conceptual framework where a single model is used to generate multiple sets of predictions by introducing noise or perturbations into the model during training. The method covers Dropout and many other stochastic regularization techniques.
+- `2015` [Gradual DropIn of Layers to Train Very Deep Neural Networks](https://arxiv.org/abs/1511.06951)
+    - Instead of randomly setting some units to 0 like Dropout, DropIn randomly sets some units to the corresponding value in the previous layer. DropIn can be used as a regularizer (with a fixed DropIn rate) or to train very deep networks (with a gradually increasing DropIn rate)
 - `2015` [Adding Gradient Noise Improves Learning for Very Deep Networks](https://arxiv.org/abs/1511.06807)
     - The authors improved NN performance (on both the training and test set) by adding a gradually decreasing amount of Gaussian noise to the gradients during training. This may work by helping the model escape local minima and traverse saddle points more quickly.
 - `2016` [Deep Networks with Stochastic Depth](https://arxiv.org/abs/1603.09382)
