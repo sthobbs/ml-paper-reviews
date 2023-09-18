@@ -193,6 +193,8 @@
     - Dropout doesn't work too well on CNNs because neighbouring pixels are so strongly correlated that you're not really dropping much information. This paper presents an enhancement to dropout for CNNs, DropBlock, where contiguous rectangular regions are randomly dropped.
 - `2018` [Whiteout: Gaussian Adaptive Noise Injection Regularization in Deep Neural Networks](https://arxiv.org/abs/1612.01490)
     - Whiteout is a family of noise injection regularization techniques, that inject Gaussian noise into nodes (either additively or multiplicatively) with dynamic variance. This technique outperforms dropout when the training set is small, but it's worse when the training set is large.
+- `2019` [Shakeout: A New Approach to Regularized Deep Neural Network Training](https://arxiv.org/abs/1904.06593)
+    - Shakeout is a form of stochastic regularization. Instead of randomly setting some units to 0 like Dropout, Shakeout randomly either enhances or reverses each unit's contribution to the next layer. For example, the contribution from a positive weight is either slightly increased, or set to a slightly negative value, in such a way that the expected value of the weight remains unchanged.
 
 ## Optimization
 
