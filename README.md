@@ -191,6 +191,8 @@
     - This paper introduces a regularization technique for RNNs called zoneout, where randomly selected hidden states are passed forward to the next time-step (unmodified). This can also be applied to RNN variants like LSTM and GRU.
 - `2018` [DropBlock: A regularization method for convolutional networks](https://arxiv.org/abs/1810.12890)
     - Dropout doesn't work too well on CNNs because neighbouring pixels are so strongly correlated that you're not really dropping much information. This paper presents an enhancement to dropout for CNNs, DropBlock, where contiguous rectangular regions are randomly dropped.
+- `2018` [Whiteout: Gaussian Adaptive Noise Injection Regularization in Deep Neural Networks](https://arxiv.org/abs/1612.01490)
+    - Whiteout is a family of noise injection regularization techniques, that inject Gaussian noise into nodes (either additively or multiplicatively) with dynamic variance. This technique outperforms dropout when the training set is small, but it's worse when the training set is large.
 
 ## Optimization
 
