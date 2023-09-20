@@ -30,6 +30,8 @@
 
 
 ## Tabular Models
+- `2016` [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/abs/1603.02754)
+    - XGBoost (eXtreme Gradient Boosting) is a scalable end-to-end gradient boosting framework that is popular in machine learning competitions due to its high accuracy and speed.
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
     - Over the past few years, several deep learning models have claimed to outperform XGBoost on tabular data. This paper comprehensively reviews these models on a bunch of datasets and concludes that XGBoost is still the best single-model approach for tabular data, however an ensemble of XGBoost and deep learning models performs even better. 
 - `2022` [Why do tree-based models still outperform deep learning on tabular data](https://arxiv.org/abs/2207.08815)
