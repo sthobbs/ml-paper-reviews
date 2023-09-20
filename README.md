@@ -32,6 +32,11 @@
 ## Tabular Models
 - `2016` [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/abs/1603.02754)
     - XGBoost (eXtreme Gradient Boosting) is a scalable end-to-end gradient boosting framework that is popular in machine learning competitions due to its high accuracy and speed.
+- `2017` [LightGBM: A Highly Efficient Gradient Boosting Decision Tree](https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf)
+    - LightGBM (Light Gradient Boosting Machine) is a popular open-source machine learning framework that uses gradient boosting to train models. It is designed to be efficient and scalable, making it suitable for large datasets and high-dimensional feature spaces. Over the past year, more than half of the Kaggle competitions involving tabular data have been won by solutions that involved LightGBM (more than XGBoost and CatBoost). LightGBM tends to train much faster than XGBoost due to 2 key optimizations:
+
+        1. Gradient-based One-Side Sampling (GOSS), which down samples low-gradient data points to reduce the number of rows computed on.
+        2. Exclusive Feature Bundling (EFB), which merges features that rarely contain non-zero values simultaneously to reduce the number of columns computed on.
 - `2021` [Tabular Data: Deep Learning Is Not All You Need](https://arxiv.org/abs/2106.03253)
     - Over the past few years, several deep learning models have claimed to outperform XGBoost on tabular data. This paper comprehensively reviews these models on a bunch of datasets and concludes that XGBoost is still the best single-model approach for tabular data, however an ensemble of XGBoost and deep learning models performs even better. 
 - `2022` [Why do tree-based models still outperform deep learning on tabular data](https://arxiv.org/abs/2207.08815)
