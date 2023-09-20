@@ -25,8 +25,9 @@
     1. [Gradient-Based Optimization](#gradient-based-optimization)
     2. [Bayesian Optimization](#bayesian-optimization)
     3. [Evolutionary Algorithms](#evolutionary-algorithms)
-14. [Model Explainability](#model-explainability)
-15. [Miscellaneous](#miscellaneous)
+14. [AutoML](#automl)
+15. [Model Explainability](#model-explainability)
+16. [Miscellaneous](#miscellaneous)
 
 
 ## Tabular Models
@@ -232,6 +233,10 @@
     - Particle Swarm Optimization (PSO) is an evolutionary algorithm for optimizing functions, where you initialize a bunch of "particles" at random points, then iterate the following steps: evaluate the function at each particle location, then for each particle, takes a random-sized step in the direction of the previous best location (i.e. best function value) for that particle, and another random step in the direction of the best location among all particles. The step sizes can be large and can overshoot the previous best locations.
     - In modern machine learning, evolutionary algorithms only have a minor role because gradient-based algorithms like SGD are far superior at optimizing neural networks. For hyperparameter tuning (where gradients don't exist, so SGD doesn't work), Bayesian methods tend to outperform evolutionary ones, but evolutionary methods are often used as part of the Bayesian optimization. Sequential Model-Based Optimization (SMBO), which includes Bayesian hyperparameter optimization as a special case, works as follows in general. We have a "true function" that we're trying to optimize (e.g. hyperparameters -> the validation error from the model after training) which is slow to compute, a "surrogate function" which approximates the true function and is fast to compute, and an "acquisition function" (e.g. hyperparameters -> expected improvement of the surrogate function over the previous best value, or hyperparameters -> probability of improvement of the surrogate function over the previous best value) which is optimized to determine the next hyperparameters to evaluate the true function on (which balances exploitation vs exploration). An evolutionary algorithm is often used to optimize this acquisition function, however it's often an evolutionary algorithm other than PSO, such as Covariance Matrix Adaptation - Evolution Strategy (CMA-ES).
 
+
+## AutoML
+- `2015` [Efficient and Robust Automated Machine Learning](https://papers.nips.cc/paper_files/paper/2015/hash/11d0e6287202fced83f79975ec59a3a6-Abstract.html)
+    - This paper describes the key algorithm in the "Auto-Sklearn" AutoML package. There are some interesting ideas in here on how to automatically select a machine learning algorithm and how to ensemble multiple models. The scope of Auto-Sklearn is restricted to classical ML, it doesn't do deep learning.
 
 ## Model Explainability
 - `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
