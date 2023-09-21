@@ -237,6 +237,8 @@
 ## AutoML
 - `2015` [Efficient and Robust Automated Machine Learning](https://papers.nips.cc/paper_files/paper/2015/hash/11d0e6287202fced83f79975ec59a3a6-Abstract.html)
     - This paper describes the key algorithm in the "Auto-Sklearn" AutoML package. There are some interesting ideas in here on how to automatically select a machine learning algorithm and how to ensemble multiple models. The scope of Auto-Sklearn is restricted to classical ML, it doesn't do deep learning.
+- `2020` [H20 AutoML: Scalable Automatic Machine Learning](https://www.automl.org/wp-content/uploads/2020/07/AutoML_2020_paper_61.pdf)
+    - The paper describes a 2020 snapshot of the H2O AutoML algorithm. It's not too far from a glorified for loop over models and hyperparameters that are known to usually perform well.
 
 ## Model Explainability
 - `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
