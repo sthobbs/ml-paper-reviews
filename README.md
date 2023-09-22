@@ -239,6 +239,8 @@
     - This paper describes the key algorithm in the "Auto-Sklearn" AutoML package. There are some interesting ideas in here on how to automatically select a machine learning algorithm and how to ensemble multiple models. The scope of Auto-Sklearn is restricted to classical ML, it doesn't do deep learning.
 - `2020` [H20 AutoML: Scalable Automatic Machine Learning](https://www.automl.org/wp-content/uploads/2020/07/AutoML_2020_paper_61.pdf)
     - The paper describes a 2020 snapshot of the H2O AutoML algorithm. It's not too far from a glorified for loop over models and hyperparameters that are known to usually perform well.
+- `2021` [AutoML: A Survey of the State-of-the-Art](https://arxiv.org/abs/1908.00709)
+    - This paper gets into the deep learning side of AutoML, including neural architecture search (NAS), which is a very active area of research.
 
 ## Model Explainability
 - `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
