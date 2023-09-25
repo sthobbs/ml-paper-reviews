@@ -26,8 +26,9 @@
     2. [Bayesian Optimization](#bayesian-optimization)
     3. [Evolutionary Algorithms](#evolutionary-algorithms)
 14. [AutoML](#automl)
-15. [Model Explainability](#model-explainability)
-16. [Miscellaneous](#miscellaneous)
+15. [Weight Initialization](#weight-initialization)
+16. [Model Explainability](#model-explainability)
+17. [Miscellaneous](#miscellaneous)
 
 
 ## Tabular Models
@@ -243,6 +244,10 @@
     - The paper describes a 2020 snapshot of the H2O AutoML algorithm. It's not too far from a glorified for loop over models and hyperparameters that are known to usually perform well.
 - `2021` [AutoML: A Survey of the State-of-the-Art](https://arxiv.org/abs/1908.00709)
     - This paper gets into the deep learning side of AutoML, including neural architecture search (NAS), which is a very active area of research.
+
+## Weight Initialization
+- `2010` [Understanding the difficulty of training deep feedforward neural networks](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
+    - This paper proposes what later became referred to as "Xavier Initialization" (named after the author), which is a way to initialize model weights such that the activation (and gradient) variances are approximately constant across layers. This enables the training of deeper neural networks by addressing the exploding/vanishing gradient problem. This initialization strategy only has the constant variance property when using an activation function that is an odd function (i.e. rotationally symmetric about the origin) (e.g. tanh). Since these activation functions have fallen out of favour, this initialization isn't commonly used anymore.
 
 ## Model Explainability
 - `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
