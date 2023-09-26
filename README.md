@@ -172,6 +172,8 @@
 ## Data Augmentation
 - `2017` [The Effectiveness of Data Augmentation in Image Classification using Deep Learning](https://arxiv.org/abs/1712.04621)
     - The paper proposes an architecture to jointly train two prepended neural networks as a data augmentation strategy. (1) An augmentation network, which takes 2 images and outputs 1 image combining the two (similar to style transfer), and (2) a classification network which takes the output of the augmentation network as input. At test time, only the classification network is used.
+- `2019` [CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features](https://arxiv.org/abs/1905.04899)
+    - CutMix is a data augmentation strategy for images, which involves cutting out a rectangle from an image and replacing it with part of another image. Labels are linearly interpolated based on the proportion of each image. This forces models to learn to identify objects from any part of them (e.g. being able to identify dogs in pictures from just seeing their legs).
 
 ## Other Architectural Tools
 - `2013` [Maxout Networks](https://arxiv.org/abs/1302.4389)
