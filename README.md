@@ -248,6 +248,8 @@
 ## Weight Initialization
 - `2010` [Understanding the difficulty of training deep feedforward neural networks](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
     - This paper proposes what later became referred to as "Xavier Initialization" (named after the author), which is a way to initialize model weights such that the activation (and gradient) variances are approximately constant across layers. This enables the training of deeper neural networks by addressing the exploding/vanishing gradient problem. This initialization strategy only has the constant variance property when using an activation function that is an odd function (i.e. rotationally symmetric about the origin) (e.g. tanh). Since these activation functions have fallen out of favour, this initialization isn't commonly used anymore.
+- `2015` [Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/He_Delving_Deep_into_ICCV_2015_paper.pdf)
+    - The authors propose the PReLU (Parametric Rectified Linear Unit) action function as a generalization of ReLU. They also give a weight initialization strategy, similar to "Xavier Initialization", but for ReLU/PReLU activations.
 
 ## Model Explainability
 - `2017` [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874) (SHAP)
